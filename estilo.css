@@ -7,8 +7,35 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #e6b9d4, #f8e6f3);
-    color: #f1cee9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1.hi1, h1.hi4 {
+    font-weight: 600;
+    color: #f74fab; /* Un rosado y elegante */
+}
+
+p {
+    font-weight: 400;
+    color: #555;
+}
+
+.hi4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3rem; /* tamaño grande */
+    color: #ff69b4; /* un rosado llamativo (Hot Pink) */
+    text-shadow: 2px 2px 4px rgba(241, 8, 125, 0.753); /* sombra suave para resaltar */
+    margin-top: 20px;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0a3d1, #f8e6f3);
+    color: #f7a0c8;
     padding: 20px;
     min-height: 100vh;
     transition: background-color 0.5s, color 0.5s;
@@ -30,7 +57,7 @@ h1.hi1 {
     text-align: center;
     margin-bottom: 10px;
     color: #f552b1;
-    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.6);
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
 }
 
 body.dark-mode h1.hi1 {
@@ -73,7 +100,7 @@ body.dark-mode h1.hi4 {
 }
 
 .filter-btn {
-    background-color: #ad5389;
+    background-color: #f15e8f;
     border: none;
     padding: 10px 20px;
     margin: 5px;
@@ -82,26 +109,26 @@ body.dark-mode h1.hi4 {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s;
-    box-shadow: 0 3px 6px rgba(173, 83, 137, 0.5);
+    box-shadow: 0 3px 6px rgba(240, 73, 115, 0.5);
     user-select: none;
 }
 
 .filter-btn:hover,
 .filter-btn.active {
-    background-color: #7f3a78;
-    box-shadow: 0 6px 12px rgba(127, 58, 120, 0.7);
+    background-color: #f15e8a;
+    box-shadow: 0 6px 12px rgba(230, 77, 123, 0.7);
 }
 
 body.dark-mode .filter-btn {
     background-color: #dca6e1;
-    color: #4a2c57;
-    box-shadow: 0 3px 6px rgba(220, 166, 225, 0.5);
+    color: #f06c9f;
+    box-shadow: 0 3px 6px rgba(241, 117, 167, 0.664);
 }
 
 body.dark-mode .filter-btn:hover,
 body.dark-mode .filter-btn.active {
-    background-color: #b382ce;
-    box-shadow: 0 6px 12px rgba(179, 130, 206, 0.7);
+    background-color: #f33990;
+    box-shadow: 0 6px 12px rgba(224, 151, 179, 0.7);
 }
 
 /* Sección de productos */
@@ -155,13 +182,13 @@ product-card {
 }
 
 body.dark-mode .product-card {
-    background-color: #3a3a57;
-    box-shadow: 0 4px 10px rgba(220, 166, 225, 0.3);
+    background-color: #e74b94;
+    box-shadow: 0 4px 10px rgba(247, 126, 166, 0.863);
 }
 
 .product-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(173, 83, 137, 0.4);
+    box-shadow: 0 8px 20px rgba(241, 16, 151, 0.932);
 }
 
 .product-card img {
@@ -169,20 +196,41 @@ body.dark-mode .product-card {
     display: block;
     border-radius: 14px 14px 0 0;
     transition: transform 0.3s ease, filter 0.3s ease;
-    filter: drop-shadow(0 0 2px rgba(126, 65, 110, 0.3));
+    filter: drop-shadow(0 0 2px rgba(243, 24, 108, 0.938));
     user-select: none;
 }
 
 .product-card:hover img {
     transform: scale(1.1);
-    filter: drop-shadow(0 0 10px #ad5389);
+    filter: drop-shadow(0 0 10px #f32c68);
 }
+
+.price {
+  display: inline-block;          /* Que se ajuste al contenido */
+  background-color: #e91e63;     /* Color rosa fuerte */
+  color: white;                  /* Texto blanco */
+  padding: 8px 16px;             /* Espacio interno */
+  border-radius: 25px;           /* Bordes redondeados */
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;               /* Cambia el cursor al pasar */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Sombra suave */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  user-select: none;             /* Evita seleccionar texto accidentalmente */
+}
+
+.price:hover {
+  background-color: #c2185b;     /* Color más oscuro al pasar el mouse */
+  transform: scale(1.05);        /* Pequeño zoom para efecto */
+}
+
 
 /* Tooltip */
 .tooltip {
     position: absolute;
     bottom: 0;
-    background-color: rgba(127, 58, 120, 0.85);
+    background-color: rgba(238, 80, 133, 0.85);
     color: white;
     font-size: 0.9rem;
     padding: 6px 10px;
@@ -200,48 +248,48 @@ body.dark-mode .product-card {
     background-color: rgba(255, 255, 255, 0.85);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(126, 65, 110, 0.3);
+    box-shadow: 0 5px 15px rgba(235, 50, 112, 0.986);
     max-width: 700px;
     margin: 0 auto 60px;
-    color: #59306d;
+    color: #f82f83;
     transition: background-color 0.5s, color 0.5s;
     user-select: none;
 }
 
 body.dark-mode .skincare {
-    background-color: rgba(58, 58, 87, 0.85);
+    background-color: rgba(228, 82, 155, 0.85);
     color: #dca6e1;
-    box-shadow: 0 5px 20px rgba(220, 166, 225, 0.5);
+    box-shadow: 0 5px 20px rgba(243, 66, 104, 0.959);
 }
 
 .skincare h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: center;
-    color: #914d9b;
+    color: #ee5f8e;
     letter-spacing: 2px;
     font-weight: 700;
 }
 
 body.dark-mode .skincare h1 {
-    color: #dca6e1;
+    color: #e1a6bd;
 }
 
 .skincare h2 {
     font-size: 1.5rem;
     margin-bottom: 8px;
-    color: #7f3a78;
+    color: #ec4d75;
 }
 
 body.dark-mode .skincare h2 {
-    color: #b382ce;
+    color: #ec447c;
 }
 
 .skincare p {
     font-size: 1rem;
     margin-bottom: 20px;
     line-height: 1.4;
-    color: #6a3a70;
+    color: #fa5298;
 }
 
 body.dark-mode .skincare p {
@@ -253,7 +301,7 @@ body.dark-mode .skincare p {
     margin: 0 auto 30px;
     max-width: 250px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(126, 65, 110, 0.4);
+    box-shadow: 0 4px 8px rgba(235, 101, 130, 0.938);
     transition: transform 0.3s ease;
     cursor: pointer;
     user-select: none;
@@ -261,7 +309,7 @@ body.dark-mode .skincare p {
 
 .skincare img:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(126, 65, 110, 0.6);
+    box-shadow: 0 8px 15px rgba(241, 97, 133, 0.897);
 }
 
 /* Scroll to top button */
@@ -269,14 +317,14 @@ body.dark-mode .skincare p {
     position: fixed;
     bottom: 40px;
     right: 40px;
-    background-color: #ad5389;
+    background-color: #fc6693;
     border: none;
     padding: 12px 16px;
     border-radius: 50%;
     cursor: pointer;
     color: white;
     font-size: 22px;
-    box-shadow: 0 4px 8px rgba(173, 83, 137, 0.6);
+    box-shadow: 0 4px 8px rgba(253, 104, 154, 0.904);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.4s;
@@ -290,12 +338,14 @@ body.dark-mode .skincare p {
 }
 
 #scrollTopBtn:hover {
-    background-color: #7f3a78;
-    box-shadow: 0 8px 16px rgba(127, 58, 120, 0.8);
+    background-color: #f85082;
+    box-shadow: 0 8px 16px rgba(241, 102, 160, 0.932);
 }
 
 /* Responsive */
-@media (max-width: 768px)
+@media (max-width: 768px){
     .products-grid {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
+}
+    
