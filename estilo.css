@@ -60,6 +60,92 @@ h1.hi1 {
     text-shadow: 1px 1px 5px rgb(255, 255, 255);
 }
 
+/* Estilo para nombres y descripciones */
+.product-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0.5em 0 0.2em;
+  color: #d10089; /* fuccia fuerte */
+  text-transform: uppercase;
+}
+
+.product-description {
+  font-size: 0.95rem;
+  margin-bottom: 0.5em;
+  color: #aa0075;
+  font-style: italic;
+}
+
+/* Botón de agregar al carrito */
+.add-to-cart-btn {
+  background: linear-gradient(90deg, #ff0080, #ff66b2);
+  color: white;
+  border: none;
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 0, 128, 0.3);
+}
+
+.add-to-cart-btn:hover {
+  background: linear-gradient(90deg, #e60073, #ff3399);
+  transform: scale(1.05);
+}
+
+/* Carrito bonito */
+.cart {
+  background-color: #fff0f8;
+  border: 2px solid #ff69b4;
+  border-radius: 10px;
+  padding: 1.5em;
+  margin-top: 3em;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 20px rgba(255, 20, 147, 0.2);
+}
+
+.cart h2 {
+  color: #d10089;
+  font-size: 1.6rem;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-items li {
+  border-bottom: 1px solid #ffc0cb;
+  padding: 0.6em 0;
+  font-weight: bold;
+  color: #990066;
+}
+
+.thank-you {
+  color: #d10089;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1em;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.thank-you.show {
+  opacity: 1;
+}
+
+/* Fuentes y reset */
+
+
+
+
+
 body.dark-mode h1.hi1 {
     color: #d3a4d8;
     text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.9);
